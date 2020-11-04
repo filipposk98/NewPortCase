@@ -3,8 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background: #82829c;
-  
-  
+  display:grid;
 }
 
 .content {
@@ -18,12 +17,16 @@ body {
 .hero-back {
   width: 100%;
   height: calc(100vh);
-  background: url("Sotware info modal.png")
-    no-repeat 50% 50%;
-  background-size: 75%;
-  position: center;
-  
+  position: relative;
+  min-height: calc(100vh);
+  background: url("Sotware info modal.png") no-repeat 50% 50%;
+  background-size: 150% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
+
+
+
 
 h1 {
   font-family: Poppins;
@@ -46,7 +49,4 @@ p {
   left: 0;
   right: 0;
   margin: auto;
-  
-  
-
 }
