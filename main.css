@@ -1,0 +1,52 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #82829c;
+  
+  
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  max-width: 1200px;
+  padding: 40px 0 40px 0;
+}
+
+.hero-back {
+  width: 100%;
+  height: calc(100vh);
+  background: url("Sotware info modal.png")
+    no-repeat 50% 50%;
+  background-size: 75%;
+  position: center;
+  
+}
+
+h1 {
+  font-family: Poppins;
+  color: rgb(66, 64, 64);
+}
+
+p {
+  font-family: Poppins;
+  line-height: 30px;
+  color: black;
+  font-weight: lighter;
+}
+
+.hero-back img {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  
+  
+
+}
