@@ -10,7 +10,7 @@ $(window).scroll(function() {
         $(document).ready(function() {
             var s = skrollr.init();
           })
-       
+          
 
     });
 //     if (scrollPos < 100) {
