@@ -1,4 +1,26 @@
 html,
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+:root{
+  --primary-bg-color: white;
+  --secondary-section-color: #c6c8e7;
+  --text-bg-color: black;
+  --font-family-menco: "Menco", sans-serif;
+  --font-family-menco-bold: "Menco bold", sans-serif;
+  --primary-button-color: black;
+  --secondary-button-color:white;
+  
+
+}
 body {
   margin: 0;
   padding: 0;
@@ -25,6 +47,7 @@ header {
   justify-content: space-between;
   display: flex;
   align-items: center;
+  /* box-shadow: 0px 4px 56px rgba(0, 0, 0, 0.24); */
   z-index: 2;
 }
 
@@ -32,6 +55,7 @@ nav  {
   margin: o;
   position:relative;
   align-items: center;
+  font-family:  var(--font-family-menco-bold);
 }
 
 nav ul li {
@@ -43,6 +67,8 @@ nav ul li a {
   color: black;
   font-size: 24px;
   padding: 20px 30px;
+ 
+  
   
 }
 
@@ -51,6 +77,42 @@ label.logo {
   margin-left: 3rem;
   font-size: 30px;
   line-height: 80px;
+  font-family:  var(--font-family-menco-bold);
+}
+button {
+  color: #FF023F;
+  background: var(--primary-button-color);
+  border-radius: 3rem;
+  border: #FF023F solid 2px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  width: 12.5rem;
+  height: 2.8rem;
+  outline: none;
+  font-family:  var(--font-family-menco-bold);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  color: black;
+  background: var( --secondary-button-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border: #FF023F solid 2px;
+  transition: 0.35s;
+}
+.login {
+  width: 6rem;
+  color: black;
+  background: var( --secondary-button-color);
+
+}
+.login:hover{
+  color: #FF023F;
+  background: var( --primary-button-color);
+  /* box-shadow: 3px 3px 4px 4px rgba(65, 60, 60, 0.15); */
+  border: #FF023F solid 2px;
+  transition: 0.35s;
+
 }
 
 .btn {
@@ -89,7 +151,7 @@ label.logo {
   height: calc(100vh);
   position: relative;
   min-height: calc(100vh);
-  background: url("Group 4251.png") no-repeat 50% 50%;
+  background: url("FrontImg.svg") no-repeat 50% 50%;
   background-size: 120% auto;
   background-repeat: no-repeat;
   background-position: center 32%;
@@ -99,15 +161,21 @@ label.logo {
 
 
 h1 {
-  font-family: Poppins;
-  color: rgb(66, 64, 64);
+  font-family: var(--font-family-menco-bold);
+  color:black;
+  font-size: 3.5rem;;
+  text-align: center;
+  margin-top: 3.5rem;
+  margin-bottom: 4.5rem;
+
 }
 
 p {
-  font-family: Poppins;
+  font-family: var(--font-family-menco);
   line-height: 30px;
   color: black;
-  font-weight: lighter;
+  font-size: 24px;
+  
 }
 
 .hero-back img {
@@ -121,11 +189,39 @@ p {
   margin: auto;
 }
 
-/* under Hero image */
+/* under Hero image section1 */
+
+section {
+  font-family: var(--font-family-menco);
+  
+}
 
 .container{
-  background-color: red;
+  display:grid;
+  background-color: white;
   display: grid;
   bottom : 20rem;
-  height: 35rem;
+  height: 25rem;
+  /* grid-template-columns: repeat(7, 1fr); */
 }
+
+#btnsection1 {
+  position: relative;
+  left: 30rem;
+  
+
+
+}
+section2 {
+  background-color:#F4F4F5 ;
+  margin-top: 5rem;
+
+}
+  
+
+
+@media screen and (max-width: 600px) {
+  body {
+    background: olive;
+  }
+  }
