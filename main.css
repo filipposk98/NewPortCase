@@ -7,6 +7,8 @@ html,
 }
 
 html {
+  
+  /* width: 100%; */
   height: 100vh;
 }
 
@@ -18,8 +20,6 @@ html {
   --font-family-menco-bold: "Menco bold", sans-serif;
   --primary-button-color: black;
   --secondary-button-color:white;
-  
-
 }
 body {
   margin: 0;
@@ -47,15 +47,18 @@ header {
   justify-content: space-between;
   display: flex;
   align-items: center;
-  /* box-shadow: 0px 4px 56px rgba(0, 0, 0, 0.24); */
   z-index: 2;
 }
 
 nav  {
   margin: o;
+  background-color: white;
   position:relative;
   align-items: center;
   font-family:  var(--font-family-menco-bold);
+  box-shadow: none;
+  width: 33%;
+  -webkit-box-shadow: none;
 }
 
 nav ul li {
@@ -67,10 +70,7 @@ nav ul li a {
   color: black;
   font-size: 24px;
   padding: 20px 30px;
- 
-  
-  
-}
+ }
 
 label.logo {
   color: black;
@@ -79,6 +79,7 @@ label.logo {
   line-height: 80px;
   font-family:  var(--font-family-menco-bold);
 }
+
 button {
   color: #FF023F;
   background: var(--primary-button-color);
@@ -95,6 +96,7 @@ button {
 
 button:hover {
   color: black;
+  
   background: var( --secondary-button-color);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   border: #FF023F solid 2px;
@@ -109,14 +111,17 @@ button:hover {
 .login:hover{
   color: #FF023F;
   background: var( --primary-button-color);
-  /* box-shadow: 3px 3px 4px 4px rgba(65, 60, 60, 0.15); */
   border: #FF023F solid 2px;
   transition: 0.35s;
 
 }
 
-.btn {
+
+.bTn {
   margin-right: 3rem;
+  background-color: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 
 }
 
@@ -126,6 +131,7 @@ button:hover {
   margin: auto;
   max-width: 1200px;
   padding: 40px 0 40px 0;
+  z-index: 0;
 }
 
 .hero-back {
@@ -158,8 +164,6 @@ button:hover {
   z-index: 1;
 }
 
-
-
 h1 {
   font-family: var(--font-family-menco-bold);
   color:black;
@@ -167,6 +171,7 @@ h1 {
   text-align: center;
   margin-top: 3.5rem;
   margin-bottom: 4.5rem;
+  z-index: 0;
 
 }
 
@@ -175,6 +180,7 @@ p {
   line-height: 30px;
   color: black;
   font-size: 24px;
+  z-index: 0;
   
 }
 
@@ -197,27 +203,157 @@ section {
 }
 
 .container{
-  display:grid;
   background-color: white;
-  display: grid;
   bottom : 20rem;
   height: 25rem;
-  /* grid-template-columns: repeat(7, 1fr); */
+  z-index: 0;
+   
 }
 
 #btnsection1 {
   position: relative;
   left: 30rem;
-  
-
-
 }
 section2 {
   background-color:#F4F4F5 ;
   margin-top: 5rem;
+  height: 45rem;
+}
+
+.leftH1 {
+  width: 60rem;
+  top: -38rem;
+  position: relative;
+  text-align: left;
+}
+
+#gameboy {
+  position: relative;
+  top: -15rem;
+  left: 66rem;
+  z-index: 1;
+}
+
+section3 {
+  display: grid;
+  grid-template: repeat(8, 1fr) / repeat(6, 1fr); ;
+  background-color:white;
+  height: 55rem;
+}
+
+#works {
+  grid-column: 3/5;
+}
+
+section3  li {
+  display: inline-block;
+  font-family: var(--font-family-menco-bold);
+  font-size: 2.5rem;
+  grid-column: 2/6;
 
 }
+
+#Sign {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#Access {
+  grid-column: 3/4;
+  grid-row: 2/3;
+
+}
+
+#Create {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+#Collaborate {
+  grid-column: 5/5;
+  grid-row: 2/3;
+}
+
+#work {
+  grid-row: 3/6;
+  grid-column: 2/4;
+}
+
+  .smallp {
+    font-family: var(--font-family-menco);
+    font-size: 18px;
+    width: 220px;
+    grid-row: 5/9;
+    grid-column: 2/5;
   
+}
+
+
+#Signp {
+  grid-column: 2/3;
+  grid-row: 5/7;
+}
+
+#Accessp {
+  grid-column: 3/4;
+  grid-row: 5/7;
+
+}
+
+#Createp {
+  grid-column: 4/5;
+  grid-row: 5/7;
+}
+
+#Collaboratep {
+  grid-column: 5/5;
+  grid-row: 5/7;
+}
+
+section4 {
+  display: grid;
+  grid-template: repeat(8, 1fr) / repeat(6, 1fr); ;
+  height: 41.6rem;
+  background-color:#F4F4F5 ;
+  margin-top: 5rem;
+  
+}
+
+#integre {
+ grid-column: 2/6;
+}
+
+#integrep {
+  grid-row: 2/3;
+  grid-column: 2/6;
+}
+
+.carousel {
+  grid-row: 2/9;
+  grid-column: 1/9;
+  width: 105%;
+  height: 1150px;
+  perspective: 600px;
+  position: relative;
+  bottom: 200px;
+}
+
+.carousel .carousel-item{
+  width: 450px;
+  height: 400px;
+}
+  
+.carousel .carousel-item img{
+  width: 80%;
+  box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+
+}
+
+section5 {
+  background-color: #FFD7E0;
+  height: 150rem;
+}
 
 
 @media screen and (max-width: 600px) {
