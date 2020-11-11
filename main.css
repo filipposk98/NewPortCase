@@ -382,9 +382,9 @@ section5 {
 
 footer {
   background-color: black;
-  height: 30rem;
+  height: 18rem;
   display: grid;
-  grid-template: repeat(8, 1fr) / repeat(6, 1fr); 
+  grid-template: repeat(6, 1fr) / repeat(20, 1fr); 
   z-index: 1;
 }
 
@@ -394,9 +394,110 @@ footer {
   z-index: 1;
 }
 
+.logon {
+  
+  grid-column: 2/3;
+  grid-row: 2/6;
+
+}
+
+.footnav   {
+  font-family:  var(--font-family-menco-bold);
+  color: white;
+  grid-column: 4/5;
+  grid-row: 2/9;
+  font-size: 24px;
+  padding: 20px 30px;
+}
+.footli {
+  justify-content: space-evenly;
+  padding-bottom: 1.5rem;
+  grid-column: 4/4;
+  grid-row: 2/3;
+}
+
+.footnav2  {
+  font-family:  var(--font-family-menco-bold);
+  color: white;
+  grid-column: 6/6;
+  grid-row: 2/9;
+  font-size: 24px;
+  padding: 20px 30px;
+}
+
+.footli2 {
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+  grid-column: 6/6;
+  grid-row: 2/3;
+}
+h2 {
+  font-family:  var(--font-family-menco-bold);
+  color: white;
+  font-size: 24px;
+  grid-column: 8/10;
+  grid-row: 2/3;
+  padding: 20px;
+}
+
+h5 {
+  font-family:var(--font-family-menco);
+  font-size: 18px;
+}
+
+.social {
+  grid-column: 8/12;
+  grid-row: 3/6;
+  padding-left: 1.2rem;
+}
+ #signtext {
+   color:white;
+  grid-column: 13/20;
+  grid-row: 2/6;
+  font-size: 24;
+  padding-top: 1rem;
+
+ }
+
+ #fname{
+   background-color: black;
+   color: white;
+   border: double;
+   border-color: #FF023F;
+   border-radius: 80px;
+  grid-column: 13/17;
+  grid-row: 4/6;
+  height: 2.8rem;
+  margin-right: 1rem;
+  width: 19rem;
+ }
+
+ .Signup {
+   background-color: #FF023F;
+   color: white;
+  grid-column: 17/20;
+  grid-row: 4/6;
+  z-index: 1;
+  width: 10rem;
+  height: 3.3rem;
+  
+ }
+
+ .hamburger {
+
+
+ }
 
 @media screen and (max-width: 600px) {
   body {
     background: olive;
   }
+
+.bTn {
+  display:none;
+}
+
+  nav ul {
+    display:none;
+}
   }
