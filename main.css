@@ -24,6 +24,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   background:rgb(255, 255, 255);
   display:grid;
   
@@ -382,7 +383,7 @@ section5 {
 
 footer {
   background-color: black;
-  height: 18rem;
+  /* height: auto; */
   display: grid;
   grid-template: repeat(6, 1fr) / repeat(20, 1fr); 
   z-index: 1;
@@ -488,7 +489,7 @@ h5 {
 
  }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   body {
     background: olive;
   }
@@ -500,4 +501,4 @@ h5 {
   nav ul {
     display:none;
 }
-  }
+  } */
