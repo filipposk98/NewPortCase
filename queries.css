@@ -1,12 +1,190 @@
+
+/* Smaller device in the market */
 @media screen and (max-width: 568px) {
     body {
-      background: olive;
+      
+      width: 100%;
     }
+
+    
+
+
+      nav  {
+        display:none;
+      }
+
+    .bTn {
+        display:none;
+      }
 
     .nav ul {
         display:none;
     }
 
-    
+
+      .hero-back img {
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      h1 {
+        font-family: var(--font-family-menco-bold);
+        color:black;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 3.5rem;
+        margin-bottom: 4.5rem;
+        z-index: 0;
+      
+      }
+      
+      p {
+        font-family: var(--font-family-menco);
+        line-height: 30px;
+        color: black;
+        font-size: 18px;
+        z-index: 0;
+        
+      }
+
+      section {
+        width: 100vw;
+        height: auto;
+        
+      }
+
+
+      .content {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: 40px 0 40px 0;
+        z-index: 0;
+      }
+
+      .ErlyAccess {
+          display:none;
+      }
+
+      section2 {
+        width: 100vw;
+        height: auto;
+      }
+
+      #gameboy {
+          display: none;
+      }
+
+      .leftH1 {
+        width: 100%;
+        
+        position: relative;
+        text-align: left;
+      }
+
+      #anim1 {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        /* padding: 40px 0 40px 0; */
+        z-index: 0;
+        position: relative;
+        bottom: -70vh;
+        padding-left: 6vh;
+        padding-right: 6vh;
+
+      }
+
+      section3 {
+        width: 100vw;
+        display: grid;
+       grid-template: repeat(2, 1fr) / repeat(6, 1fr); ;
+       background-color:white;
+       height: 55rem;
+       height: auto;
+      }
+
+      section3  li {
+        display: none;
+        font-family: var(--font-family-menco-bold);
+        font-size: 2.5rem;
+        grid-column: 2/2;
+        height: auto;
+      
+      }
+
+      .smallp {
+          display:none;
+      }
+
+      #work{
+          display: none;
+      }
+
+      .gamepad{
+        display: none;
+      }
+
+      .Signup {
+          display: none;
+      }
+
+      #fname {
+        display: none;
+      }
+
+      section4 {
+          width:100vw;
+          height: auto;
+      }
+
+
+      .carousel {
+        height: auto;
+        bottom: 20vh;
+      }
+
+      section5 {
+        width:100vw;
+        height: auto;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .social{
+        display: none;
+    }
+
+
+
     }
   
+
+/* Bigger phones */
+    @media screen and (max-width: 767px) {
+    }
+
+
+
+
+
+
+
+/* Ipad portrait mode */
+    @media screen and (max-width: 1023) {
+
+    }
+
+
+/* Ipad landscape view bit tablet to 1200px */
+    @media screen and (max-width: 1200px) {
+
+    }
