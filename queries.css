@@ -6,10 +6,7 @@
       width: 100%;
     }
 
-    
-
-
-      nav  {
+     nav  {
         display:none;
       }
 
@@ -20,18 +17,6 @@
     .nav ul {
         display:none;
     }
-
-
-      .hero-back img {
-        width: 50%;
-        height: 50%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-      }
 
       h1 {
         font-family: var(--font-family-menco-bold);
@@ -153,6 +138,11 @@
       section5 {
         width:100vw;
         height: auto;
+    }
+
+    .register {
+        grid-column: 3/5;
+        grid-row: 8/9;
     }
 
     footer{
